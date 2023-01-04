@@ -1,0 +1,66 @@
+[
+  {
+    "title": "Detect Browser Bars Visibility with JavaScript",
+    "image": "https://i.ibb.co/kmP2ttp/1.jpg",
+    "description": "It's one thing to know about what's in the browser document, it's another to have insight as to the user's browser itself. We've gotten past detecting which browser the user is using, and we're now into knowing what pieces of the browser UI users are seeing. Website performance monitoring Browsers provide window.personalbar, window.locationbar, and window.menubar properties, with the shape of { visible : /*boolean*/} as its value: What would you use these properties for? Maybe providing a warning to users when your web app required maximum browser space. Outside of that, these properties seem invasive. What do you think?",
+    "tags": ["JavaScript","CSS","UI"],
+    "date": "20/12/2022",
+    "author": "rony"
+  },
+  {
+    "title": "JavaScript print Events",
+    "image": "https://i.ibb.co/vHPNmvb/8.jpg",
+    "description": "Media queries provide a great way to programmatically change behavior depending on viewing state. We can target styles to device, pixel ratio, screen size, and even print. That said, it's also nice to have JavaScript events that also allow us to change behavior. Did you know you're provided events both before and after printing? It may sound weird but considering print is very important, especially when your website is documentation-centric. In my early days of web, I had a client who only viewed their website from print-offs. Styling with @media print is usually the best options but these JavaScript events may help!",
+    "tags": ["JavaScript","CSS","UI"],
+    "date": "21/12/2022",
+    "author": "sura"
+  },
+  {
+    "title": "How to Control CSS Animations with JavaScript",
+    "image": "https://i.ibb.co/Lp8PZmV/7.jpg",
+    "description": "When it comes to animations on the web, developers need to measure the animation's requirements with the right technology -- CSS or JavaScript. Many animations are manageable with CSS but JavaScript will always provide more control. With document.getAnimations, however, you can use JavaScript to manage CSS animations! The document.getAnimations method returns an array of CSSAnimation objects. CSSAnimation provides a host of information about the animation: playState, timeline, effect, and events like on finish. You can then modify those objects to adjust animations. How could adjusting CSS animations on the fly be useful to developers? Maybe use the Battery API to stop all animations when the device battery is low. Possibly to stop animations when the user has scrolled past the animation itself. I love the way you can use JavaScript to modify CSS animations. Developers used to need to choose between CSS and JavaScript -- now we have the tools to make them work together!",
+    "tags": ["JavaScript","CSS","Animation"],
+    "date": "27/12/2022",
+    "author": "km"
+  },
+  {
+    "title": "Detecting Fonts Ready",
+    "image": "https://i.ibb.co/HXZ5JHN/5.jpg",
+    "description": "Knowing when resources are loaded is a key part of building functional, elegant websites. We're used to using the DOMContentLoaded event (commonly referred to as domready) but did you know there's an event that tells you when all fonts have loaded? Let's learn how to use document.fonts! The document.fonts object features a ready property which is a Promise representing if fonts have been loaded. Font files can be relatively large so you can never assume they've loaded quickly. One simply await from document.fonts.ready gives you the answer!",
+    "tags": ["CSS","Font"],
+    "date": "23/12/2022",
+    "author": "trishna"
+  },
+  {
+    "title": "How to Internationalize Numbers with Node.js",
+    "image": "https://i.ibb.co/dPVfhxc/6.jpg",
+    "description": "Presenting numbers in a readable format takes many forms, from visual charts to simply adding punctuation. Those punctuation, however, are different based on internationalization. Some countries use , for decimal, while others use .. Worried about having to code for all this madness? Don't -- Node.js provides a method do the hard work for you! Website performance monitoring. The Number primitive has a toLocaleString method to do the basic formatting for you. It's a major relief that Node.js provides us these type of helpers so that we don't need to rely on bloated third-party libraries. No excuses -- the tool is there!",
+    "tags": ["Node.js","Number"],
+    "date": "24/12/2022",
+    "author": "kamrujjaman"
+  },
+  {
+    "title": "Locate Empty Directories from Command Line",
+    "image": "https://i.ibb.co/StG8vwM/4.jpg",
+    "description": "As a software engineer that lives too much of his life on a computer, I like keeping my machine as clean as possible. I don't keep rogue downloaded files and removes apps when I don't need them. Part of keeping a clean, performant system is removing empty directories. Website performance monitoring To identify empty directories, I use the following command: find . -type d --empty To remove empty directories, we can add a --delete flag: find . -type d --empty --delete Keeping a clean machine is easy when you know the tools that can help you. find makes identifying and eliminating easy, so don't be afraid to use it!",
+    "tags": ["Command","System","Window"],
+    "date": "25/12/2022",
+    "author": "rony"
+  },
+  {
+    "title": "How to Extend Prototypes with JavaScript",
+    "image": "https://i.ibb.co/wgtqkFq/3.jpg",
+    "description": "One of the ideological sticking points of the first JavaScript framework was was extending prototypes vs. wrapping functions. Frameworks like MooTools and Prototype extended prototypes while jQuery and other smaller frameworks did not. Each had their benefits, but ultimately all these years later I still believe that the ability to extend native prototypes is a massive feature of JavaScript. Let's check out how easy it is to empower every instance of a primitive by extending prototypes! Website performance monitoring Every JavaScript native, like Number, String, Array, Object, etc. has a prototype. Every method on a prototype is inherited by every instance of that object. For example, we can provide every `Array instance with a unique method by extending its prototype The biggest criticism of extending prototypes has always been name collision where the eventual specification implementation is different than the framework implementation. While I understand that argument, you can combat it with prefixing function names. Adding super powers to a native prototype so that every instance has it is so useful that I'd never tell someone not to extend a prototype.",
+    "tags": ["JavaScript","Array","Command"],
+    "date": "26/12/2022",
+    "author": "sura"
+  },
+  {
+    "title": "How to Use window.crypto in Node.js",
+    "image": "https://i.ibb.co/9tmdWhS/2.jpg",
+    "description": "I've been writing a bunch of jest tests recently for libraries that use the underlying window.crypto methods like getRandomValues() and window.crypto.subtle key management methods. One problem I run into is that the window.crypto object isn't available, so I need to shim it.Website performance monitoring To use the window.crypto methods, you will need Node 15+. You can set the window.crypto by importing the crypto package and setting it on the global: const crypto = require('crypto').webcrypto; // Shims the crypto property onto global global.crypto = crypto; I really loathe creating mock functions for missing libraries in Node because they can lead to faulty positives on tests; I really appreciate bcrypto being available!",
+    "tags": ["Node.js","Window"],
+    "date": "22/12/2022",
+    "author": "kamrujjaman"
+  }
+]
